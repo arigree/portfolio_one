@@ -8,7 +8,7 @@ function initURLListener() {
     $(window).on("hashchange", function () {
         const pageID = window.location.hash.substring(1) || "home";
         loadPage(pageID);
-    });
+    }); 
 
     loadPage(window.location.hash.substring(1) || "home");
 }
