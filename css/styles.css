@@ -97,7 +97,7 @@ nav {
   }
   .nav-links a:hover,
   .nav-links a.active {
-    color: #f96728;
+    color: #f56b88;
     font-weight: bold;
   }
 }
@@ -222,9 +222,11 @@ section {
   /* padding: 30px; */
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
   h2 {
     text-align: center;
     color: #333;
+    margin-bottom: 16px;
   }
   .about-content {
     width: 100%;
@@ -232,7 +234,7 @@ section {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
     #my-photo {
       height: 20vh;
       width: 20vh;
@@ -256,9 +258,10 @@ section {
 }
 
 h2 {
-  font-size: 50px;
-  margin-bottom: 16px;
+  font-size: 60px;
+  margin-bottom: 50px;
 }
+
 .project-list {
   display: flex;
   flex-wrap: wrap;
@@ -266,6 +269,10 @@ h2 {
   gap: 20px;
 }
 .project {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: #fdf6e3;
   color: #333;
   padding: 20px;
@@ -273,10 +280,28 @@ h2 {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   width: 300px;
   text-align: center;
+  p{
+    margin-bottom: 16px;
+  }
 
   img {
     max-width: 100%;
     border-radius: 5px;
+  }
+  .gitBtn{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    a {
+      text-decoration: none;
+      color: #3a3a3a;
+      font-size: 16px;
+      position: relative;
+      padding: 10px 10px;
+      background-color: #fdf6e3;
+      border-radius: 5px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
   }
   .skills {
     display: flex;
@@ -293,22 +318,58 @@ h2 {
   }
 }
 
-.contact {
-  p {
-    margin-bottom: 10px;
-  }
-  a {
-    color: #f56b88;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
+#contact {
+  width: 60vw;
+  margin: 0 auto;
+  background: #fdf6e3;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  text-align: center;
+}
+
+#contact h2 {
+  font-family: Grenze;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#contact p {
+  font-family: Montserrat;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+#contact a {
+  color: #f56b88;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+.socials {
+  margin-top: 20px;
+}
+
+.socials a {
+  display: inline-block;
+  margin: 0 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.socials a:hover {
+  transform: scale(1.2);
 }
 
 .socials i {
-  font-size: 30px;
+  font-size: 36px;
+  color: #333;
 }
+
 
 footer {
   background: #333;
