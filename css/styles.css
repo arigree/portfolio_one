@@ -381,14 +381,69 @@ footer {
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+  
+  nav .logo {
+    width: auto;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  nav .logo a {
+    visibility: hidden;
+  }
+  
+  .nav-links {
+    position: relative;
+    top: -20px;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .nav-links a {
+    font-size: 4vw;
+    padding: 8px 12px;
   }
 
   .hero h1 {
     font-size: 36px;
   }
+  .hero p {
+    font-size: 20px;
+  }
 
   .project-list {
     flex-direction: column;
+  }
+  #about {
+    width: 90vw;
+    padding: 20px;
+  }
+  
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #my-photo {
+    height: 30vw;
+    width: 30vw;
+    margin-bottom: 20px;
+  }
+  
+  #about-text {
+    width: 100%;
+    font-size: 4vw;
+    text-align: center;
+  }
+  #contact{
+    width: 90%;
+  }
+  #contact h2{
+    
+    font-size: 36px;
   }
 }
 
