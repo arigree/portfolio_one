@@ -321,6 +321,39 @@ h2 {
   }
 }
 
+#resume {
+  width: 60vw;
+  margin: 0 auto 50px auto;
+  background: #fdf6e3;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  text-align: center;
+}
+
+#resume h2 {
+  font-family: Grenze;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#resume p {
+  font-family: Montserrat;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#resume iframe {
+  width: 100%;
+  max-width: 900px;
+  height: 600px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+}
+
+
 #contact {
   width: 60vw;
   margin: 0 auto;
@@ -440,6 +473,18 @@ footer {
     width: 100%;
     font-size: 4vw;
     text-align: center;
+  }
+  #resume {
+    width: 90%;
+    padding: 20px;
+  }
+
+  #resume h2 {
+    font-size: 36px;
+  }
+
+  #resume iframe {
+    height: 400px;
   }
   #contact{
     width: 90%;
